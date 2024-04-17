@@ -1,0 +1,261 @@
+/************* site defaults *************/
+.flex {
+    display: flex;
+}
+
+/************* site-wide text styling *************/
+h1 {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #01060f;
+    color: white;
+    cursor: pointer;
+}
+
+/************* header/footer styling *************/
+header,
+footer {
+    background-color: #E5AF42;
+}
+
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 29px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************* index page *************/
+.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to the full viewport height */
+}
+
+
+.index .about-us {
+    flex: 1;
+    text-align: left;
+}
+
+.index img {
+    width: 350px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 15px;
+}
+
+.index .fake-button {
+    width: 250px;
+    margin: 0 auto 150px auto;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Adjust the margin as needed */
+}
+
+.fake-button {
+    width: 150px; /* Adjust the width as needed */
+    margin: 0 10px; /* Adjust the margin between buttons as needed */
+}
+
+
+/************* bookings page *************/
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.booking-page p {
+    font-size: 18px;
+}
+
+.day-selectors {
+    margin-bottom: 12px;
+}
+
+.day-selectors li {
+    width: 60px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.small-button {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.clear-days {
+    width: 200px;
+}
+
+button.clicked {
+    background-color: #554524;
+}
+.booking-page {
+    text-align: center; /* Center-align the content */
+}
+
+.day-selector {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.day-selector li {
+    display: inline-block; /* Display days horizontally */
+    margin: 0 40px; /* Add spacing between days */
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+/* Style for each day button */
+.blue-hover {
+    padding: 5px 10px; /* Add padding to increase clickable area */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Optional: Adjust styles for clicked day button */
+.blue-hover.clicked {
+    background-color: #191c21; /* Change background color when clicked */
+    color: white; /* Change text color when clicked */
+}
+.booking-page {
+    text-align: center; /* Center-align the content */
+}
+
+.day-selector {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    
+}
+
+.day-selector li {
+    display: inline-block; /* Display days horizontally */
+    margin: 0 50px; /* Add spacing between days */
+}
+
+/* Style for each day button */
+.blue-hover {
+    display: inline-block;
+    padding: 10px 20px; /* Add padding to increase clickable area */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: 1px solid #000; /* Add border */
+}
+
+/* Optional: Adjust styles for clicked day button */
+.blue-hover.clicked {
+    background-color: #676565; /* Change background color when clicked */
+    color: rgb(255, 255, 255); /* Change text color when clicked */
+}
+
+/* Center-align the text */
+.booking-page p {
+    margin: 20px 0; /* Add margin top and bottom for spacing */
+}
+
+/************* contact page *************/
+.contact-container {
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    height: 420px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .labels {
+    width: 150px;
+    text-align: right;
+}
+
+.contact .inputs {
+    width: 300px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.contact button {
+    width: calc(300px - 10px); /* 5px padding on each side */
+}
+
+.contact form .fake-button {
+    margin-left: 90px; /* Adjust the margin between the email input and button */
+}
